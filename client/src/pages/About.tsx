@@ -4,7 +4,7 @@ const About: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto space-y-12">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">About Our Platform</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">About This Platform</h1>
         <p className="text-xl text-gray-600">
           Empowering learners to master machine learning through comprehensive and practical education.
         </p>
@@ -14,8 +14,8 @@ const About: React.FC = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h2>
           <p className="text-gray-600">
-            We are dedicated to making machine learning education accessible to everyone. Our platform
-            provides high-quality, practical courses that help students develop real-world skills in
+            We are dedicated to making machine learning education accessible to everyone. This platform
+            provides practical courses that help students develop theoretical knowledge and practical skills in
             artificial intelligence and machine learning.
           </p>
         </div>
@@ -23,8 +23,7 @@ const About: React.FC = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Approach</h2>
           <p className="text-gray-600">
-            We believe in learning by doing. Our courses combine theoretical knowledge with hands-on
-            projects, ensuring that students can apply what they learn to solve real problems.
+            The courses begins with theoretical knowledge and we will later add projects, ensuring that students can apply what they learn to solve real problems.
           </p>
         </div>
       </div>
@@ -50,7 +49,7 @@ const About: React.FC = () => {
             </div>
             <h3 className="text-lg font-semibold text-gray-800 mb-2">Expert Instructors</h3>
             <p className="text-gray-600">
-              Learn from industry professionals with years of experience in machine learning.
+              Learn from a curious student in machine learning, trying to learn and share his knowledge.
             </p>
           </div>
 

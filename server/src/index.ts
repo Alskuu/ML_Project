@@ -35,6 +35,14 @@ app.get('/api/classes', (req, res) => {
       category: 'Supervised Learning'
     },
     {
+      id: 5,
+      title: 'Support Vector Machines',
+      description: 'Master Support Vector Machines (SVMs), a powerful supervised learning algorithm for classification and regression problems.',
+      duration: '3 hours',
+      level: 'Advanced',
+      category: 'Supervised Learning'
+    },
+    {
       id: 3,
       title: 'K-Means Clustering',
       description: 'Master the K-means clustering algorithm, a popular unsupervised learning method for data segmentation.',

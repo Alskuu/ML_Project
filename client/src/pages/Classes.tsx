@@ -47,6 +47,8 @@ const Classes: React.FC = () => {
         return '/linear-regression';
       case 2:
         return '/probabilistic-classifier';
+      case 5:
+        return '/support-vector-machines';
       default:
         return `/class/${id}`;
     }

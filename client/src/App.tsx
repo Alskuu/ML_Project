@@ -6,6 +6,7 @@ import ClassDetail from './pages/ClassDetail';
 import About from './pages/About';
 import LinearRegression from './pages/LinearRegression';
 import ProbabilisticClassifier from './pages/ProbabilisticClassifier';
+import SupportVectorMachines from './pages/SupportVectorMachines';
 import Login from './pages/Login';
 import { AuthProvider } from './contexts/AuthContext';
 
@@ -125,6 +126,7 @@ function App() {
                   <Route path="/about" element={<About />} />
                   <Route path="/linear-regression" element={<LinearRegression />} />
                   <Route path="/probabilistic-classifier" element={<ProbabilisticClassifier />} />
+                  <Route path="/support-vector-machines" element={<SupportVectorMachines />} />
                   <Route path="/login" element={<Login />} />
                 </Routes>
               </div>
