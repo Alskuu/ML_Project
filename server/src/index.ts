@@ -57,6 +57,14 @@ app.get('/api/classes', (req, res) => {
       duration: '4 hours',
       level: 'Advanced',
       category: 'Reinforcement Learning'
+    },
+    {
+      id: 6,
+      title: 'Dimensionality Reduction',
+      description: 'Learn advanced techniques for reducing the number of features in your dataset while preserving important information.',
+      duration: '3 hours',
+      level: 'Advanced',
+      category: 'Unsupervised Learning'
     }
   ];
   res.json(classes);
