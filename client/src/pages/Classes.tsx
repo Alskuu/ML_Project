@@ -41,18 +41,22 @@ const Classes: React.FC = () => {
     ? classes
     : classes.filter(c => c.category === selectedCategory);
 
-  const getClassRoute = (id: number) => {
-    switch (id) {
-      case 1:
+  const getClassRoute = (classId: string) => {
+    switch (classId) {
+      case '1':
         return '/linear-regression';
-      case 2:
+      case '2':
         return '/probabilistic-classifier';
-      case 5:
+      case '5':
         return '/support-vector-machines';
-      case 6:
+      case '3':
+        return '/clustering';
+      case '4':
+        return '/unsupervised-learning';
+      case '6':
         return '/dimensionality-reduction';
       default:
-        return `/class/${id}`;
+        return `/class/${classId}`;
     }
   };
 
@@ -118,7 +122,7 @@ const Classes: React.FC = () => {
                 </span>
               </div>
               <Link
-                to={getClassRoute(classItem.id)}
+                to={getClassRoute(classItem.id.toString())}
                 className="block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 px-4 rounded-lg font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
               >
                 Start Learning

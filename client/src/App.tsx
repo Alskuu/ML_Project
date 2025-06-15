@@ -9,6 +9,7 @@ import ProbabilisticClassifier from './pages/ProbabilisticClassifier';
 import SupportVectorMachines from './pages/SupportVectorMachines';
 import UnsupervisedLearning from './pages/UnsupervisedLearning';
 import DimensionalityReduction from './pages/DimensionalityReduction';
+import Clustering from './pages/Clustering';
 import Login from './pages/Login';
 import { AuthProvider } from './contexts/AuthContext';
 
@@ -131,6 +132,7 @@ function App() {
                   <Route path="/support-vector-machines" element={<SupportVectorMachines />} />
                   <Route path="/unsupervised-learning" element={<UnsupervisedLearning />} />
                   <Route path="/dimensionality-reduction" element={<DimensionalityReduction />} />
+                  <Route path="/clustering" element={<Clustering />} />
                   <Route path="/login" element={<Login />} />
                 </Routes>
               </div>

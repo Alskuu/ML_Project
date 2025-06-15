@@ -147,6 +147,143 @@ const UnsupervisedLearning: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <div className="space-y-6 mt-8">
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="text-2xl font-semibold mb-4">
+              Clustering
+            </h3>
+            <p className="mb-4">
+              Learn how to group similar data points together to discover patterns and structures in your data.
+            </p>
+            <div className="flex justify-between items-center mb-6">
+              <span className="text-gray-600">
+                Duration: 3 hours
+              </span>
+              <span className="text-blue-600">
+                Level: Intermediate
+              </span>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Introduction
+                </h4>
+                <p className="mb-4">
+                  Clustering is a fundamental unsupervised learning technique that groups similar data points together. This process is essential for:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Discovering natural groupings in data</li>
+                  <li>Identifying patterns and relationships</li>
+                  <li>Data segmentation and organization</li>
+                  <li>Anomaly detection</li>
+                  <li>Feature learning</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  K-Means Clustering
+                </h4>
+                <p className="mb-4">
+                  K-Means is one of the most popular clustering algorithms. It works by:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 mb-4">
+                  <li>Partitioning data into K clusters</li>
+                  <li>Minimizing within-cluster variance</li>
+                  <li>Iteratively updating cluster centers</li>
+                </ul>
+                <p className="mb-4">
+                  Key concepts in K-Means include:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Cluster centroids</li>
+                  <li>Distance metrics</li>
+                  <li>Convergence criteria</li>
+                  <li>Initialization methods</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Hierarchical Clustering
+                </h4>
+                <p className="mb-4">
+                  Hierarchical clustering builds a tree of clusters by:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 mb-4">
+                  <li>Creating a hierarchy of clusters</li>
+                  <li>Using agglomerative or divisive approaches</li>
+                  <li>Measuring cluster distances</li>
+                </ul>
+                <p className="mb-4">
+                  Important considerations include:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Linkage methods</li>
+                  <li>Dendrogram interpretation</li>
+                  <li>Cluster validation</li>
+                  <li>Computational complexity</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Density-Based Clustering
+                </h4>
+                <p className="mb-4">
+                  Density-based methods like DBSCAN:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 mb-4">
+                  <li>Identify clusters based on data density</li>
+                  <li>Handle irregularly shaped clusters</li>
+                  <li>Detect outliers automatically</li>
+                </ul>
+                <p className="mb-4">
+                  Key parameters include:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Epsilon (neighborhood radius)</li>
+                  <li>Minimum points</li>
+                  <li>Density thresholds</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Practical Applications
+                </h4>
+                <p className="mb-4">
+                  Clustering is applied in various domains:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Customer segmentation</li>
+                  <li>Image segmentation</li>
+                  <li>Document organization</li>
+                  <li>Anomaly detection</li>
+                  <li>Market basket analysis</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-semibold mb-3">
+                  Best Practices and Considerations
+                </h4>
+                <p className="mb-4">
+                  When applying clustering:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Choose appropriate distance metrics</li>
+                  <li>Preprocess and normalize data</li>
+                  <li>Validate cluster quality</li>
+                  <li>Consider computational requirements</li>
+                  <li>Interpret results carefully</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

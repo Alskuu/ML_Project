@@ -44,9 +44,9 @@ app.get('/api/classes', (req, res) => {
     },
     {
       id: 3,
-      title: 'K-Means Clustering',
+      title: 'Clustering',
       description: 'Master the K-means clustering algorithm, a popular unsupervised learning method for data segmentation.',
-      duration: '2.5 hours',
+      duration: '2 hours',
       level: 'Intermediate',
       category: 'Unsupervised Learning'
     },

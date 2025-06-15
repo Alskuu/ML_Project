@@ -51,4 +51,4 @@ Express.js for the backend
 Tailwind CSS for styling
 Modern development tools and best practices
 
-The machine learning class content are added by modifying the data in the server's index.ts file
+The machine learning class content is added by modifying the data in the server's index.ts file.
