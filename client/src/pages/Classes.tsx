@@ -19,7 +19,7 @@ const Classes: React.FC = () => {
   useEffect(() => {
     const fetchClasses = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/classes');
+        const response = await fetch('/.netlify/functions/classes');
         if (!response.ok) {
           throw new Error('Failed to fetch classes');
         }

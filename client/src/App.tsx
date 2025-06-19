@@ -12,6 +12,8 @@ import DimensionalityReduction from './pages/DimensionalityReduction';
 import Clustering from './pages/Clustering';
 import Login from './pages/Login';
 import { AuthProvider } from './contexts/AuthContext';
+import ChatWidget from './components/ChatWidget';
+
 
 // NavLink component for active state styling
 const NavLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => {
@@ -162,6 +164,8 @@ function App() {
               </div>
             </div>
           </footer>
+          {/* Chat Widget global*/}
+          <ChatWidget />
         </div>
       </Router>
     </AuthProvider>
