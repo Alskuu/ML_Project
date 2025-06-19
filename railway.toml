@@ -1,9 +1,0 @@
-[build]
-cmd = "cd client && npm install && npm run build && cd ../server && npm install && npm run build"
-
-[deploy]
-startCommand = "cd server && npm start"
-
-[env]
-PORT = { default = "3000" }
-NODE_ENV = { default = "production" }
