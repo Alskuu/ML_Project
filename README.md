@@ -88,3 +88,5 @@ The website is built with:
 - Modern development tools and best practices
 
 The website is available on this link : https://mlprojetsku.netlify.app/
+
+client/public/robots.txt
