@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-interface ClassDetail {
+interface ClassDetailData {
   id: number;
   title: string;
   description: string;
@@ -12,7 +12,7 @@ interface ClassDetail {
 
 const ClassDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const [classData, setClassData] = useState<ClassDetail | null>(null);
+  const [classData, setClassData] = useState<ClassDetailData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -25,7 +25,7 @@ const ClassDetail: React.FC = () => {
         }
         const data = await response.json();
         const allClasses = data.categories.flatMap((category: any) => category.classes);
-        const foundClass = allClasses.find((c: ClassDetail) => c.id === parseInt(id || "1"));
+        const foundClass = allClasses.find((c: ClassDetailData) => c.id === parseInt(id || "1"));
         setClassData(foundClass || null);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
