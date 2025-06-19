@@ -70,6 +70,11 @@ app.get('/api/classes', (req, res) => {
   res.json(classes);
 });
 
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date().toISOString() });
+});
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
@@ -78,4 +83,4 @@ app.get('*', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
-}); 
+});
