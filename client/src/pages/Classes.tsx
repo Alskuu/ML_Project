@@ -35,7 +35,7 @@ const Classes: React.FC = () => {
     fetchClasses();
   }, []);
 
-  const categories = ['All', 'Supervised Learning', 'Unsupervised Learning'];
+  const categories = ['All', 'Supervised Learning', 'Unsupervised Learning', 'Neural Networks'];
 
   const filteredClasses = selectedCategory === 'All'
     ? classes
