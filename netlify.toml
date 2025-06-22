@@ -5,17 +5,16 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# API routes should go to functions FIRST
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
 # Handle SPA routing - serve index.html for all routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
-  force = false
-
-# API routes should go to functions
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
   status = 200
 
 [functions]
