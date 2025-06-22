@@ -10,6 +10,9 @@ import SupportVectorMachines from './pages/SupportVectorMachines';
 import UnsupervisedLearning from './pages/UnsupervisedLearning';
 import DimensionalityReduction from './pages/DimensionalityReduction';
 import Clustering from './pages/Clustering';
+import Nonparametric from './pages/Nonparametric';
+import Trees from './pages/Trees';
+import NeuralNetworks from './pages/NeuralNetworks';
 import Login from './pages/Login';
 import { AuthProvider } from './contexts/AuthContext';
 import ChatWidget from './components/ChatWidget';
@@ -135,6 +138,9 @@ function App() {
                   <Route path="/unsupervised-learning" element={<UnsupervisedLearning />} />
                   <Route path="/dimensionality-reduction" element={<DimensionalityReduction />} />
                   <Route path="/clustering" element={<Clustering />} />
+                  <Route path="/nonparametric" element={<Nonparametric />} />
+                  <Route path="/trees" element={<Trees />} />
+                  <Route path="/neural-networks" element={<NeuralNetworks />} />
                   <Route path="/login" element={<Login />} />
                 </Routes>
               </div>

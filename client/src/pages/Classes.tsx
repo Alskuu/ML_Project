@@ -19,7 +19,7 @@ const Classes: React.FC = () => {
   useEffect(() => {
     const fetchClasses = async () => {
       try {
-        const response = await fetch('/.netlify/functions/classes');
+        const response = await fetch('/api/classes');
         if (!response.ok) {
           throw new Error('Failed to fetch classes');
         }
@@ -35,7 +35,7 @@ const Classes: React.FC = () => {
     fetchClasses();
   }, []);
 
-  const categories = ['All', 'Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning'];
+  const categories = ['All', 'Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning', 'Non-Parametric Learning', 'Trees', 'Neural Networks'];
 
   const filteredClasses = selectedCategory === 'All'
     ? classes
@@ -55,6 +55,12 @@ const Classes: React.FC = () => {
         return '/unsupervised-learning';
       case '6':
         return '/dimensionality-reduction';
+      case '7':
+        return '/nonparametric';
+      case '8':
+        return '/trees';
+      case '9':
+        return '/neural-networks';
       default:
         return `/class/${classId}`;
     }
