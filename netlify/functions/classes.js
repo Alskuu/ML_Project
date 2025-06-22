@@ -72,7 +72,7 @@ exports.handler = async function(event, context) {
         description: 'An introduction to neural networks, from perceptrons to CNNs.',
         duration: '3.5h',
         level: 'Advanced',
-        category: 'Supervised Learning',
+        category: 'Neural Networks',
       },
     ])
   };
