@@ -35,7 +35,7 @@ const Classes: React.FC = () => {
     fetchClasses();
   }, []);
 
-  const categories = ['All', 'Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning', 'Non-Parametric Learning', 'Trees', 'Neural Networks'];
+  const categories = ['All', 'Supervised Learning', 'Unsupervised Learning'];
 
   const filteredClasses = selectedCategory === 'All'
     ? classes
@@ -141,4 +141,4 @@ const Classes: React.FC = () => {
   );
 };
 
-export default Classes; 
+export default Classes;

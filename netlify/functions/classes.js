@@ -56,7 +56,7 @@ exports.handler = async function(event, context) {
         description: 'Learn about non-parametric methods like k-NN.',
         duration: '1.5h',
         level: 'Intermediate',
-        category: 'Non-Parametric Learning',
+        category: 'Supervised Learning',
       },
       {
         id: 8,
@@ -64,7 +64,7 @@ exports.handler = async function(event, context) {
         description: 'Learn about decision trees and ensemble methods like Random Forests and Boosting.',
         duration: '2.5h',
         level: 'Intermediate',
-        category: 'Trees',
+        category: 'Supervised Learning',
       },
       {
         id: 9,
@@ -72,8 +72,8 @@ exports.handler = async function(event, context) {
         description: 'An introduction to neural networks, from perceptrons to CNNs.',
         duration: '3.5h',
         level: 'Advanced',
-        category: 'Neural Networks',
+        category: 'Supervised Learning',
       },
     ])
   };
-}; 
+};
