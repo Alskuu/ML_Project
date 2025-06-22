@@ -47,7 +47,7 @@ const About: React.FC = () => {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Expert Instructors</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Expert Instructor</h3>
             <p className="text-gray-600">
               Learn from a curious student in machine learning, trying to learn and share his knowledge.
             </p>
@@ -91,9 +91,9 @@ const About: React.FC = () => {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Practical Projects</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Interactive Learning</h3>
             <p className="text-gray-600">
-              Apply your knowledge through hands-on projects and real-world applications.
+              Engage with the material in new ways. Use our integrated AI chat to ask questions and clarify concepts as you read.
             </p>
           </div>
         </div>
