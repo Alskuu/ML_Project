@@ -4,7 +4,7 @@ const ChatWidget: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([
-    { from: 'bot', text: 'Hello! I am an AI assistant trained directly on the content of the website some Wikipedia pages. How can I help you?' },
+    { from: 'bot', text: 'Hello! I am an AI assistant trained directly on the content of the website, some Wikipedia pages and some scikit-learn documentation. How can I help you?' },
   ]);
 
   const handleSend = async (e: React.FormEvent) => {
