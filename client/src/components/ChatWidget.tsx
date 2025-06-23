@@ -29,7 +29,7 @@ const ChatWidget: React.FC = () => {
         },
       });
       chat.open();
-    ;
+    `;
     document.body.appendChild(script);
 
     // Cleanup on unmount
