@@ -15,7 +15,8 @@ const ChatWidget: React.FC = () => {
       import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
       createChat({
         webhookUrl: 'http://localhost:5678/webhook/4091fa09-fb9a-4039-9411-7104d213f601/chat',
-        initialMessage: 'Hello! I am an AI assistant trained directly on the content of the website, some Wikipedia pages and some scikit-learn documentation. How can I help you?',
+        initialMessages: ['Hello! I am an AI assistant trained directly on the content of the website, some Wikipedia pages and some scikit-learn documentation. How can I help you?'],
+        mode: 'window',
         i18n: {
           en: {
             title: 'Hi there! 👋',
@@ -24,6 +25,7 @@ const ChatWidget: React.FC = () => {
             inputPlaceholder: 'Type your question..',
           },
         },
+        target: '#n8n-chat'
       });
     `;
     document.body.appendChild(script);
