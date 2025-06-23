@@ -7,12 +7,27 @@ const ChatWidget: React.FC = () => {
     { from: 'bot', text: 'Hello! I am an AI assistant trained directly on the content of the website some Wikipedia pages. How can I help you?' },
   ]);
 
-  const handleSend = (e: React.FormEvent) => {
+  const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim()) return;
-    setMessages([...messages, { from: 'user', text: input }]);
+    const userMessage = { from: 'user', text: input };
+    setMessages([...messages, userMessage]);
     setInput('');
-    // Ici, on pourra intégrer la logique n8n plus tard
+
+    try {
+      const response = await fetch('http://localhost:5678/webhook/4091fa09-fb9a-4039-9411-7104d213f601/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: input }),
+      });
+      const data = await response.json();
+      // Assume n8n returns { reply: '...' }
+      setMessages((prev) => [...prev, { from: 'bot', text: data.reply || 'No response from bot.' }]);
+    } catch (error) {
+      setMessages((prev) => [...prev, { from: 'bot', text: 'Sorry, there was an error connecting to the bot.' }]);
+    }
   };
 
   return (
