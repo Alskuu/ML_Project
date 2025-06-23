@@ -13,8 +13,6 @@ import Clustering from './pages/Clustering';
 import Nonparametric from './pages/Nonparametric';
 import Trees from './pages/Trees';
 import NeuralNetworks from './pages/NeuralNetworks';
-import Login from './pages/Login';
-import { AuthProvider } from './contexts/AuthContext';
 import ChatWidget from './components/ChatWidget';
 
 
