@@ -68,7 +68,7 @@ This project is configured for continuous deployment on Netlify.
 
 **Live Website**: [https://mlprojetsku.netlify.app/](https://mlprojetsku.netlify.app/)
 
-**Youtube Video**: 
+**Youtube Video**: [https://youtu.be/gX1MqA9Vfd8](https://youtu.be/gX1MqA9Vfd8)
 
 ## API Endpoints
 
