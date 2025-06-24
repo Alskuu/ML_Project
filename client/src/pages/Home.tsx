@@ -24,7 +24,7 @@ const Home: React.FC = () => {
       <section>
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Featured Classes</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Supervised Learning - Linear Regression */}
+          {/* Supervised Learning - Introduction */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="p-6">
               <div className="flex items-center mb-3">
@@ -33,21 +33,21 @@ const Home: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Linear Regression
+                Introduction to Supervised Learning
               </h3>
               <p className="text-gray-600 mb-4">
-                Learn the basics of linear regression and how to apply it to real-world problems.
+                Learn the fundamentals of supervised learning, where models are trained on labeled data to make predictions.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">
-                  2h duration
+                  1h duration
                 </span>
                 <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">
                   Beginner
                 </span>
               </div>
               <Link
-                to="/linear-regression"
+                to="/supervised-learning"
                 className="block w-full text-center bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transform hover:-translate-y-0.5 transition-all duration-200"
               >
                 Start Learning
@@ -64,21 +64,21 @@ const Home: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Clustering
+                Introduction to Unsupervised Learning
               </h3>
               <p className="text-gray-600 mb-4">
-                Explore clustering algorithms and their applications in discovering data patterns.
+                Explore how algorithms discover patterns in unlabeled data, from clustering to dimensionality reduction.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">
-                  2h duration
+                  1.5h duration
                 </span>
                 <span className="px-2 py-1 bg-green-100 text-green-800 rounded text-sm">
                   Beginner
                 </span>
               </div>
               <Link
-                to="/clustering"
+                to="/unsupervised-learning"
                 className="block w-full text-center bg-purple-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-purple-700 transform hover:-translate-y-0.5 transition-all duration-200"
               >
                 Start Learning

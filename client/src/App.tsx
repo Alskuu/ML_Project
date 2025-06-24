@@ -5,6 +5,7 @@ import Classes from './pages/Classes';
 import ClassDetail from './pages/ClassDetail';
 import About from './pages/About';
 import LinearRegression from './pages/LinearRegression';
+import SupervisedLearning from './pages/SupervisedLearning';
 import ProbabilisticClassifier from './pages/ProbabilisticClassifier';
 import SupportVectorMachines from './pages/SupportVectorMachines';
 import UnsupervisedLearning from './pages/UnsupervisedLearning';
@@ -129,6 +130,7 @@ function App() {
                 <Route path="/classes" element={<Classes />} />
                 <Route path="/class/:id" element={<ClassDetail />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/supervised-learning" element={<SupervisedLearning />} />
                 <Route path="/linear-regression" element={<LinearRegression />} />
                 <Route path="/probabilistic-classifier" element={<ProbabilisticClassifier />} />
                 <Route path="/support-vector-machines" element={<SupportVectorMachines />} />
