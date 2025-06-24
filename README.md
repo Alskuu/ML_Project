@@ -1,67 +1,98 @@
 # Machine Learning Classes Website
 
-A modern web application for showcasing Machine Learning classes and educational content.
+A modern, interactive web application designed to provide clear and concise educational content on key Machine Learning concepts.
 
 ## Features
 
-- Responsive design that works on all devices
-- Interactive class listings
-- Detailed class information pages
-- Modern and clean user interface
-- Easy navigation and search functionality
-- **Chat widget** available on every page
-- **Serverless API** using Netlify Functions
+- **Interactive Learning Modules**: Detailed pages for various ML topics.
+- **Featured Classes**: A homepage that highlights key areas of study.
+- **Responsive Design**: A clean and modern UI that works on all devices.
+- **Chat Widget**: An AI-powered assistant available on every page to help with questions.
+- **Serverless Backend**: Powered by Netlify Functions for a scalable and efficient API.
+
+## Available Topics
+
+The platform currently covers the following machine learning topics:
+
+- **Core Concepts**:
+  - Introduction to Supervised Learning
+  - Introduction to Unsupervised Learning
+- **Supervised Learning**:
+  - Linear Regression & Classification
+  - Probabilistic Classifiers
+  - Support Vector Machines (SVMs)
+  - Decision Trees & Ensemble Methods
+  - Neural Networks & Deep Learning
+- **Unsupervised Learning**:
+  - Dimensionality Reduction (PCA, t-SNE)
+  - Clustering (K-Means, Hierarchical)
+- **Other Topics**:
+  - Nonparametric Methods
 
 ## Tech Stack
 
-- Frontend: React.js with TypeScript (in `/client`)
-- Styling: Tailwind CSS
-- Backend/API: Netlify Serverless Functions (in `/netlify/functions`)
+- **Frontend**: React.js with TypeScript (`/client`)
+- **Styling**: Tailwind CSS
+- **Backend/API**: Netlify Serverless Functions (`/netlify/functions`)
+- **Interactive Math**: KaTeX for rendering mathematical formulas.
 
 ### Prerequisites
 
-- Node.js (v18 recommended)
-- npm (v6 or higher)
+- Node.js (v18 or higher recommended)
+- npm (or a compatible package manager)
 - [Netlify CLI](https://docs.netlify.com/cli/get-started/) (for local development)
 
 ## Project Structure
 
 ```
+.
 ├── client/             # Frontend React application
-├── netlify/functions/  # Netlify serverless functions (API endpoints)
-├── public/             # Static files
+│   ├── src/
+│   │   ├── components/ # Reusable React components
+│   │   ├── pages/      # Page components for each route
+│   │   └── App.tsx     # Main app component with routing
+│   └── ...
+├── netlify/
+│   └── functions/      # Serverless API endpoints
 ├── netlify.toml        # Netlify configuration
-└── README.md           # Project documentation
+└── README.md           # This file
 ```
 
 ## Local Development
 
-1. **Install dependencies for the frontend:**
-   ```sh
-   cd client
-   npm install
-   ```
-2. **Install Netlify CLI globally (if not already):**
-   ```sh
-   npm install -g netlify-cli
-   ```
-3. **Start the local development server (from the project root):**
-   ```sh
-   netlify dev
-   ```
-   - This will serve the React app and the Netlify Functions together.
-   - The frontend will be available at [http://localhost:8888](http://localhost:8888)
-   - API endpoints are available at [http://localhost:8888/.netlify/functions/*](http://localhost:8888/.netlify/functions/*)
+1.  **Clone the repository:**
+    ```sh
+    git clone <repository-url>
+    cd <project-directory>
+    ```
+
+2.  **Install frontend dependencies:**
+    ```sh
+    cd client
+    npm install
+    ```
+
+3.  **Install Netlify CLI (if you haven't already):**
+    ```sh
+    npm install -g netlify-cli
+    ```
+
+4.  **Run the development server from the project root:**
+    ```sh
+    netlify dev
+    ```
+
+    This command starts the React development server and the Netlify Functions API simultaneously. The application will be accessible at `http://localhost:8888`.
 
 ## Deployment
 
-1. **Push your code to your Git repository (GitHub, GitLab, etc.).**
-2. **Connect your repository to Netlify.**
-3. **Netlify will automatically build and deploy your site using the settings in `netlify.toml`:**
-   - Build command: `cd client && npm install && npm run build`
-   - Publish directory: `client/build`
-   - Functions directory: `netlify/functions`
-4. **Your site and serverless API will be live at your Netlify domain.**
+This project is configured for continuous deployment on Netlify.
+
+1.  Push your code to the main branch of your linked Git repository.
+2.  Netlify automatically triggers a new build using the settings in `netlify.toml`.
+3.  The site is deployed and live at your Netlify domain.
+
+**Live Website**: [https://mlprojetsku.netlify.app/](https://mlprojetsku.netlify.app/)
 
 ## API Endpoints
 
@@ -86,7 +117,5 @@ The website is built with:
 - Netlify Functions for the backend
 - Tailwind CSS for styling
 - Modern development tools and best practices
-
-The website is available on this link : https://mlprojetsku.netlify.app/
 
 client/public/robots.txt
