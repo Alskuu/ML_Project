@@ -21,7 +21,7 @@ const ChatWidget: React.FC = () => {
         i18n: {
           en: {
             title: 'Hi there! 👋',
-            subtitle: '',
+            subtitle: 'As I chose to not pay, you can use me only when the owner of the website is online and has opened its onlin n8n instance. After 15 minutes of inactivity from the owner, the instance will be closed and you will not be able to use me anymore.',
             footer: '',
             getStarted: 'New Conversation',
             inputPlaceholder: 'Type your question..',
