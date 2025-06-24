@@ -58,47 +58,29 @@ The platform currently covers the following machine learning topics:
 └── README.md           # This file
 ```
 
-## Local Development
-
-1.  **Clone the repository:**
-    ```sh
-    git clone <repository-url>
-    cd <project-directory>
-    ```
-
-2.  **Install frontend dependencies:**
-    ```sh
-    cd client
-    npm install
-    ```
-
-3.  **Install Netlify CLI (if you haven't already):**
-    ```sh
-    npm install -g netlify-cli
-    ```
-
-4.  **Run the development server from the project root:**
-    ```sh
-    netlify dev
-    ```
-
-    This command starts the React development server and the Netlify Functions API simultaneously. The application will be accessible at `http://localhost:8888`.
-
 ## Deployment
 
 This project is configured for continuous deployment on Netlify.
 
-1.  Push your code to the main branch of your linked Git repository.
+1.  The code is pushed to the main branch of the linked Git repository.
 2.  Netlify automatically triggers a new build using the settings in `netlify.toml`.
-3.  The site is deployed and live at your Netlify domain.
+3.  The site is deployed and live at the Netlify domain.
 
 **Live Website**: [https://mlprojetsku.netlify.app/](https://mlprojetsku.netlify.app/)
+
+**Youtube Video**: [https://youtu.be/gX1MqA9Vfd8](https://youtu.be/gX1MqA9Vfd8)
 
 ## API Endpoints
 
 All API endpoints are implemented as Netlify Functions in `/netlify/functions`.
 
 - Example: `/api/classes` is now available at `/.netlify/functions/classes`
+
+## Chatbot Widget 
+
+A Chatbot on the website linked to a workflow created directly on n8n.
+You can see on the report how complicated this step was, and how even more complicated it was to do this freely. 
+As it is free, the chatbot is only accessible when the owner of the workflow created (Alskuu) is online on the n8n deployed freely online.
 
 ## License
 
@@ -118,4 +100,7 @@ The website is built with:
 - Tailwind CSS for styling
 - Modern development tools and best practices
 
+I even tried to add some small SEO optimisation by creating the following file which helps the Google bots to analyse my website and consider where to rank it online
 client/public/robots.txt
+But it does not really work.
+
